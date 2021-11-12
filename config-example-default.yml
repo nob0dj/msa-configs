@@ -1,2 +1,3 @@
-example:
-  phase: "default"
+test:
+  current: "default"
+  name: "홍길동" 

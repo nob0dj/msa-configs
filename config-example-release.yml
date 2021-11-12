@@ -1,2 +1,3 @@
-example:
-  phase: "default"
+test:
+  current: "release"
+  name: "신사임당" 
