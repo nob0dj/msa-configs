@@ -1,0 +1,20 @@
+spring: 
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/shqkeldb
+#    url: jdbc:h2:~/shqkeldb
+    driverClassName: org.h2.Driver
+    username: shqkel
+    password: shqkel
+    initialization-mode: always
+    schema: classpath:h2/schema.sql
+    data: classpath:h2/data.sql
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+mybatis:
+  mapper-locations: classpath:*-mapper.xml 
+  configuration:
+    map-underscore-to-camel-case: true
+  
